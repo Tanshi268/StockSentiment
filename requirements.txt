@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+keras
+textblob
+transformers
+wordcloud
+matplotlib
