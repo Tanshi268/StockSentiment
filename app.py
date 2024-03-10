@@ -8,7 +8,7 @@ from keras.models import Model
 from keras.layers import Input, Dense, Dropout, Embedding, LSTM
 from keras.callbacks import EarlyStopping
 from keras_self_attention import SeqSelfAttention
-from transformers.models.modeling_bert import BertModel
+from transformers.models.bert.modeling_bert import BertModel
 from transformers import AutoTokenizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
