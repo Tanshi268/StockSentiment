@@ -11,6 +11,7 @@ from tensorflow.keras import layers
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 #For reproducability
 from numpy.random import seed
 seed(1)
