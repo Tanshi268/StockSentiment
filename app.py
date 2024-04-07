@@ -8,6 +8,7 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 from textblob import TextBlob
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(page_title='StockSentiment - Analyzing the Stocks and Twitter Data', page_icon=':bar_chart:', layout='wide')
 st.title("StockSentiment - Analyzing the Stocks and Twitter Data")
 st.sidebar.title("StockSentiment and Prediction")
