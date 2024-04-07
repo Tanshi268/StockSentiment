@@ -196,7 +196,7 @@ def plot_return_predictions(test,predicted,symbol):
     
 def return_rmse(test,predicted):
     st.subheader("Evaluation Parameter")
-    rmse = math.sqrt(mean_squared_error(test, predicted))
+    rmse = np.sqrt(mean_squared_error(test, predicted))
     r2 = r2_score(test, predicted)
     st.write(f"Root Mean Squared Error: {rmse}")
     st.write(f"R2 - Score: {r2}")
