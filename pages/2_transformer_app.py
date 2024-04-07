@@ -1,20 +1,15 @@
 import numpy as np
+import pandas as pd
+import streamlit as st
 import tensorflow as tf
 from tensorflow import keras
-from tensorflow.keras import layers
-from keras.layers import Flatten
+from datetime import datetime
+import matplotlib.pyplot as plt
 from keras import backend as K
+from keras.layers import Flatten
+from tensorflow.keras import layers
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error
-import sqlite3
-import streamlit as st
-import pandas as pd
-import math
-import matplotlib.pyplot as plt
-plt.style.use('seaborn')
-from datetime import datetime
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 #For reproducability
 from numpy.random import seed
