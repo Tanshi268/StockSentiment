@@ -9,3 +9,4 @@ matplotlib
 plotly
 mplfinance
 seaborn
+scikit-learn
