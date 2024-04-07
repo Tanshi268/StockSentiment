@@ -11,6 +11,5 @@ mplfinance
 seaborn
 scikit-learn
 tensorflow
-math
 scipy
 yfinance
