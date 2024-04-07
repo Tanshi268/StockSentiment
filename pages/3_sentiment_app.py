@@ -1,12 +1,10 @@
+import pandas as pd
+import yfinance as yf
 import streamlit as st
 from textblob import TextBlob
-import yfinance as yf
-import pandas as pd
-from scipy.stats import pearsonr
 import matplotlib.pyplot as plt
+from scipy.stats import pearsonr
 from sklearn.preprocessing import MinMaxScaler
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load data
 @st.cache_data(persist=True)
