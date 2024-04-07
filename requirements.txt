@@ -10,3 +10,8 @@ plotly
 mplfinance
 seaborn
 scikit-learn
+tensorflow
+sqlite3
+math
+scipy
+yfinance
