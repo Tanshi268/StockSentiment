@@ -7,7 +7,6 @@ from keras.models import Sequential
 from keras.layers import LSTM, Dense, Dropout
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error
-st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.set_page_config(page_title='StockSentiment - Analyzing the Stocks and Twitter Data', page_icon=':bar_chart:', layout='wide')
 
