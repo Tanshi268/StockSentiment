@@ -50,6 +50,25 @@ def volume_sale(merged_df, company_list, stock_name):
     plt.tight_layout()
     st.pyplot()
 
+def tweets_per_day(tweets_df):
+    st.subheader("No. of Tweets per Day")
+    d = {}
+    for i in tweets_df["Date"]:
+        d[i] = d.get(i, 0) + 1
+
+    keys = d.keys()
+    values = d.values()
+
+    plt.figure(figsize = (100,20))
+    plt.bar(keys, values)
+    plt.xlabel("Keys")
+    plt.ylabel("Values")
+    plt.title("No. of Tweets per Day",size = 'x-large',color = 'blue')
+    plt.xticks(rotation = 90, size = 'small')
+    plt.tight_layout()
+    plt.show()
+    st.pyplot()
+
 def candlestick_plot(yfinance_df):
     st.header("Candlestick Chart of YFinance Data")
     # Plot candlestick chart
@@ -96,6 +115,9 @@ if not st.sidebar.checkbox("Hide", False, key = '2'):
         st.subheader("Show random Tweet")
         random_tweet=st.radio('Sentiment',('positive','neutral','negative'))
         st.markdown(merged_df.query('Sentiment == @random_tweet')[["Tweet"]].sample(n = 1).iat[0,0])
+
+        # Tweets per day
+        tweets_per_day(tweets_df)
 
         # Number of tweets by sentiment - Histogram, Pie Chart
         st.markdown("### Number of tweets by sentiment")
